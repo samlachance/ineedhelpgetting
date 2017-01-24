@@ -1,0 +1,6 @@
+<h1>I need help getting:</h1>
+
+<%= form_for @need do |f| %>
+  <%= f.text_field :name, placeholder: ["Socks", "Toothpaste", "Resume Help"].sample %>
+  <%= f.submit %>
+<% end %>
