@@ -1,7 +1,13 @@
-<%= form_for @client do |f| %>
+<div class="content">
+  
+  <h1>Thanks for registering your need</h1>
+  <p>If you'd like, you can give us your contact information so we can follow up.<br>We will never sell your information.</p>
 
-<%= f.text_field :name, placeholder: "Name" %>
-<%= f.text_field :phone, placeholder: "Phone" %>
-<%= f.text_field :email, placeholder: "Email" %>
-<%= f.submit %>
-<% end %>
+  <%= form_for @client do |f| %>
+
+  <%= f.text_field :name, placeholder: "Name (Optional)" %>
+  <%= f.text_field :phone, placeholder: "Phone (Optional)" %>
+  <%= f.text_field :email, placeholder: "Email (Optional)" %>
+  <%= f.submit "Sign up" %>
+  <% end %>
+</div>

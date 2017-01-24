@@ -1,3 +1,71 @@
 // Place all the styles related to the Needs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$primary: #3ab795;
+$secondary: #2a333b;
+$white: #fff;
+
+body {
+  color: $white;
+  background-color: $primary;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+}
+p {
+  text-align: center;
+}
+
+h1.call-to-action {
+  font-size: 4em;
+  margin-top: 0;
+}
+div.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+div.content, form.new_client {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  input[type=text] {
+    text-align: center;
+  }
+}
+
+form.new_client {
+  margin-top: 40px;
+}
+
+form.new_client input {
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  width: 430px;
+}
+
+input[type=submit] {
+  color: $white;
+  background-color: $secondary;
+  padding: 15px 20px;
+  font-size: 2em;
+  border-color: $secondary;
+  border-radius: 5px;
+}
+
+input[type=text] {
+  padding: 15px 20px;
+  font-size: 2em;
+  border-color: $secondary;
+  border-radius: 5px;
+
+}
