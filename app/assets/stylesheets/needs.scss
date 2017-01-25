@@ -22,7 +22,6 @@ p {
 
 h1.call-to-action {
   font-size: 4em;
-  margin-top: 0;
 }
 div.wrapper {
   max-width: 1200px;
@@ -43,7 +42,7 @@ div.content, form.new_client {
   }
 }
 
-form.new_client {
+form.new_client, form.new_need {
   margin-top: 40px;
 }
 
